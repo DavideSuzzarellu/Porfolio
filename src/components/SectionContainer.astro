@@ -1,0 +1,9 @@
+---
+interface Props {
+    id: string;
+}
+const { id } = Astro.props
+---
+<section id={id} class="px-6 md:mx-40 mx-auto text-start my-36">
+    <slot/>
+</section>

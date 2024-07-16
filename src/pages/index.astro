@@ -1,0 +1,24 @@
+---
+import SobreMi from '../components/Sobremi.astro';
+import Layout from '../layouts/Layout.astro';
+import Proyectos from '../components/Projects.astro';
+import Tips from '../components/Tips.astro';
+import Certifications from '../components/Certifications.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import OffCanvas from '../components/OffCanvas.astro';
+---
+<Layout title="DS Developer">
+    <OffCanvas show/>
+    <SectionContainer id='sobremi'>
+        <SobreMi/>
+    </SectionContainer>
+    <SectionContainer id='certificaciones'>
+        <Certifications/> 
+    </SectionContainer> 
+    <SectionContainer id='proyectos'>
+        <Proyectos/>
+    </SectionContainer>
+    <SectionContainer id='tips'>
+        <Tips/>
+    </SectionContainer>
+</Layout>

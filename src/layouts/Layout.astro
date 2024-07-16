@@ -1,0 +1,45 @@
+---
+import '@fontsource/abeezee';
+import Navbar from '../components/Navbar.astro';
+const { title } = Astro.props
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="">
+    <Navbar />
+    <main class="grow min-h-full mt-20 mx-auto md:max-w-5xl">
+        <slot/>
+    </main>
+  </body>
+</html>
+
+<style>
+  
+  * {
+    box-sizing: content-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: radial-gradient(circle, #000037 6%, #010e42 88%, #001aa6 97%, #6982db 100%);
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'ABeeZee', sans-serif;
+  }
+
+  @media(prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>

@@ -1,0 +1,34 @@
+---
+import classNames from 'classnames';
+
+interface Props {
+  socialName: string,
+  logo: string,
+  color: string,
+  hoverColor: string,
+  url: string
+}
+const { url, socialName, logo, color, hoverColor } = Astro.props;
+
+const iconClasses = classNames(
+  logo,
+  'fa-2x',
+  'lg:transition-all',
+  'lg:duration-[20ms]',
+  'lg:delay-[80ms]',
+  'text-center',
+  'mx-1',
+  `text-${color}`,
+  `group-hover:text-${hoverColor}`
+);
+---
+
+<a href={url} class="group flex justify-end w-auto" target="_blank">
+  <div class="lg:group-hover:border-gray-500 rounded-full flex items-center lg:group-hover:bg-slate-800 justify-end w-fit md:w-[35px] p-1 lg:group-hover:w-full transition-all duration-[150ms] delay-[100ms] group-hover:delay-[50ms]">
+    <span class={`opacity-0 hidden lg:block lg:group-hover:opacity-100 font-bold transition-all duration-100 lg:group-hover:-translate-x-[1px] translate-x-1 delay-50 group-hover:delay-100 mx-2 text-${hoverColor}`}>{socialName}</span>
+    <i class={iconClasses}></i>
+  </div>
+</a>
+
+
+

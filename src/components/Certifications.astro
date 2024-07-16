@@ -1,0 +1,17 @@
+---
+import { getEntry } from "astro:content"
+import CertificationsItem from "./CertificationsItem.astro"
+import type { Certification } from "../config/config";
+
+const { data: certifications } = await getEntry('certifications', 'certification-data');
+---
+
+<h2 class="mx-auto relative lg:ms-7 text-3xl font-bold text-orange-500 flex items-center gap-2"><i class="fa-solid fa-xs lg:absolute lg:top-4 lg:-left-14 fa-graduation-cap text-center text-orange-500"></i>Certificaciones</h2>
+<ol class="relative lg:ms-7">                  
+    <li class="mb-10">  
+        {certifications.map((certification: Certification) => <CertificationsItem certification={certification}/>)}
+    </li>
+</ol>
+
+
+

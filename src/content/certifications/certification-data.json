@@ -1,0 +1,50 @@
+[
+    {
+        "courseName": "Desarrolador Frontend",
+        "company": "Fundacion Esplai",
+        "year": "2024",
+        "description": "Este curso ha proporcionado las habilidades necesarias para desarrollar aplicaciones web modernas y optimizadas, preparándome para enfrentar los desafíos del desarrollo frontend en el entorno profesional actual. Durante el curso, se han cubierto los siguientes temas:",
+        "technologies":[
+            { "name": "HTML", "icon" : ""},
+            { "name": "CSS", "icon" : ""},
+            { "name": "Tailwind CSS", "icon" : ""},
+            { "name": "Astro", "icon" : ""},
+            { "name": "Typescript", "icon" : ""},
+            { "name": "Javascript", "icon" : ""},
+            { "name": "React", "icon" : ""}
+        ]
+    },
+    {
+        "courseName":"Desarrolador de software Full Stack", 
+        "company":"4 Geeks Academy", 
+        "year":"2023 - 2024",
+        "description":"Durante este curso intensivo en 4 Geeks Academy, he adquirido las habilidades necesarias para convertirme en desarrollador Full Stack. Utilizando tecnologías como HTML, CSS, JavaScript, React, Python, Bootstrap y SQL, he creado una aplicación web completa. Desde la creación de la estructura y el diseño visual hasta la implementación de funcionalidades dinámicas y la gestión de datos en una base de datos relacional.",
+        "technologies": [
+            { "name": "HTML", "icon" : ""},
+            { "name": "CSS", "icon" : ""},
+            { "name": "Javascript", "icon" : ""},
+            { "name": "React", "icon" : ""},
+            { "name": "Python", "icon" : ""},
+            { "name": "Bootstrap", "icon" : ""},
+            { "name": "SQL", "icon" : ""}
+        ]
+    },
+    
+    {
+        "courseName":"Curso Python: de zero a todoterreno", 
+        "company":"Udemy (Héctor Costa Guzmán)",
+        "year":"2023",
+        "description":"Este curso avanzado enseña el desarrollo web utilizando Python, incluyendo Django y FastAPI para construir aplicaciones robustas y APIs eficientes. También se cubren herramientas como Tkinter, SQLite, NumPy, Pandas, Matplotlib, Beautiful Soup (Bs4) y Pipenv para manejar interfaces gráficas, bases de datos, análisis de datos, visualización, web scraping y gestión de entornos virtuales.",
+        "technologies": [
+            { "name": "Tkinter", "icon" : ""},
+            { "name": "SQLite", "icon" : ""},
+            { "name": "NumPy", "icon" : ""},
+            { "name": "Pandas", "icon" : ""},
+            { "name": "Matplotlib", "icon" : ""},
+            { "name": "Pipenv", "icon" : ""},
+            { "name": "Django", "icon" : ""},
+            { "name": "FastAPI", "icon" : ""},
+            { "name": "Bs4(Beautiful Soup)"}
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import SocialButton from "./SocialButton.astro";
+---
+<section class="mx-auto flex flex-col-reverse lg:flex-row gap-6 items-start justify-center">
+    <aside class="mx-auto h-auto flex md:flex-col justify-end">
+        <div class="w-1 flex lg:flex-col gap-4 items-end justify-center">
+            <SocialButton url="https://github.com/DavideSuzzarellu" logo="fa-brands fa-github" socialName="Github" color="white" hoverColor="orange-500" />
+            <SocialButton url="https://www.linkedin.com/in/davide-suzzarellu-95912226b/" logo="fa-brands fa-linkedin-in" socialName="Linkedin" color="white" hoverColor="blue-500"/>
+            <SocialButton url="mailto:davide.suzzarellu@hotmail.com" logo="fa-solid fa-envelope" socialName="Correo" color="white" hoverColor="red-500"/>             
+            <SocialButton url="https://wa.me/34654406170" logo="fa-brands fa-whatsapp" socialName="WhatsApp" color="white" hoverColor="green-500"/>             
+            <SocialButton url="https://wa.me/34654406170" logo="fa-solid fa-file-pdf" socialName="Curriculum" color="white" hoverColor="red-500"/>             
+        </div>
+    </aside>
+    <section class="flex flex-col gap-3">
+        <div class="rounded-full w-fit h-fit bg-slate-500 p-1 shadow-white">
+            <Image class="w-28 h-28 brightness-150 rounded-full object-cover" src="/images/avatar.jpg" loading="lazy" alt="Avatar Imagen" width="100" height="100"/>
+        </div>
+        <h1 class="text-3xl text-start  text-balance font-bold text-white">!Hola, soy Davide!</h1>
+        <p class="text-white text-start text-balance mx-auto">Soy un programador apasionado porque la programación es más que solo escribir líneas de código; es la capacidad de crear soluciones innovadoras para problemas complejos. Desde el momento en que descubrí mi amor por la programación, me cautivó la posibilidad de dar vida a ideas y conceptos abstractos a través del poder del código.</p>
+    </section>
+</section>
+
+<!-- <style>
+    .typewriter h1 {
+      overflow: hidden;
+      border-right: .20em solid orange;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation:
+        typing 3s steps(40, end),
+        blink-caret .7s step-end infinite;
+    }
+    
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: orange; }
+    }
+</style> -->

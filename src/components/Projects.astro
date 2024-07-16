@@ -1,0 +1,12 @@
+---
+import { getEntry } from "astro:content"
+import ProjectsItem from "./ProjectsItem.astro"
+
+const { data: projects } = await getEntry('projects', 'project-data');
+---
+<h2 class="mx-auto relative items-center lg:ms-7 text-3xl font-bold text-orange-500 flex gap-2"><i class="fa-solid lg:absolute lg:top-4 lg:-left-12 fa-code fa-xs text-orange-500"></i>Proyectos</h2>
+<ol class="relative lg:ms-7">                  
+    <li class="mb-10">  
+        {projects.map((project) => <ProjectsItem project={project} />)}
+    </li>
+</ol>

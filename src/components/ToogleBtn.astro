@@ -1,0 +1,17 @@
+---
+import ToggleIcon from "../components/icons/Toggle.astro"
+---
+
+<button class="toggle md:hidden ms-auto z-10">
+    <ToggleIcon />
+</button>
+
+<script>
+    const toggleBtn = document.querySelector(".toggle") as HTMLButtonElement;
+    const offcanvas = document.querySelector(".offcanvas") as HTMLElement
+    
+    toggleBtn.addEventListener("click", () => {
+        offcanvas.classList.toggle("flex")
+        offcanvas.classList.toggle("hidden")
+    })
+</script>
