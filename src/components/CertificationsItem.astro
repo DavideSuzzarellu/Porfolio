@@ -8,15 +8,15 @@ type Props = {
 const { certification } = Astro.props;
 
 ---
-<article class="mt-4 mb-10 text-white flex flex-col justify-center">
-    <h3 class="text-xl relative mb-2 font-semibold text-slate-400">{certification.courseName}</h3>
-    <h4 class="text-lg font-semibold text-orange-400">{certification.company}</h4>
-    <p>{certification.year}</p>
-    <p class="mb-2 text-pretty">{certification.description}</p>
+<article class="mt-6 mb-12 text-white flex flex-col justify-center">
+    <h4 class="text-xl relative font-semibold text-orange-400">{certification.courseName}</h4>
+    <h3 class="text-lg font-semibold text-orange-200">{certification.company}</h3>
+    <p class="text-sm mb-2 text-slate-300">{certification.year}</p>
+    <p class="mb-3 text-sm text-pretty">{certification.description}</p>
     <ul class="flex flex-wrap gap-2">
         {certification.technologies.map(tech => (
             <li class="px-4 py-1 shadow-inner shadow-slate-600 rounded-xl w-fit bg-slate-800 border border-gray-800">
-                <span class="font-semibold text-orange-300">{tech.name}</span>
+                <span class="font-semibold text-orange-300"><p class="text-sm">{tech.name}</p></span>
             </li>
         ))}
     </ul>

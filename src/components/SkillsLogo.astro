@@ -1,0 +1,17 @@
+---
+
+type Props = {
+    logoName?: string,
+}
+
+const { logoName } = Astro.props
+
+---
+<article class="relative w-28 hover:rotateX-180 h-20 bg-gradient-to-br from-[#000037] to-[#6982db] p-3 rounded-lg flex items-center justify-center transition-transform duration-500 group">
+    <div class="absolute inset-0 flex items-center justify-center backface-hidden transition-transform duration-500 group-hover:rotateX-180">
+        <slot></slot>
+    </div>
+    <span class="absolute inset-0 flex items-center justify-center backface-hidden transition-transform ease-in-out duration-500 opacity-0 group-hover:opacity-100 text-white group-hover:rotateX-180 group-hover:backface-visible">
+        {logoName}
+    </span>
+</article>

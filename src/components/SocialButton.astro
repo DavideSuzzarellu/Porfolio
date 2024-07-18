@@ -6,9 +6,10 @@ interface Props {
   logo: string,
   color: string,
   hoverColor: string,
-  url: string
+  url: string,
+  download?: string 
 }
-const { url, socialName, logo, color, hoverColor } = Astro.props;
+const { url, socialName, logo, color, hoverColor, download } = Astro.props;
 
 const iconClasses = classNames(
   logo,

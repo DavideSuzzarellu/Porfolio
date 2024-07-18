@@ -8,6 +8,14 @@ export default {
 		extend: {
 		  textColor: ['group-hover'],
 		},
+		rotate: {
+			'0': '0deg',
+			'180': '180deg',
+		  },
+		  transform: {
+			'rotateX-0': 'rotateX(0deg)',
+			'rotateX-180': 'rotateX(180deg)',
+		  },
 	  },
 	safelist: [
 		'text-orange-500', 'group-hover:text-orange-500',
@@ -15,5 +23,22 @@ export default {
 		'text-blue-500', 'group-hover:text-blue-500',
 		'text-green-500', 'group-hover:text-green-500',
 	],
-	plugins: [],
+	plugins: [
+		function ({ addUtilities }) {
+			addUtilities({
+			  '.backface-visible': {
+				'backface-visibility': 'visible',
+			  },
+			  '.backface-hidden': {
+				'backface-visibility': 'hidden',
+			  },
+			  '.rotateX-0': {
+				transform: 'rotateX(0deg)',
+			  },
+			  '.rotateX-180': {
+				transform: 'rotateX(180deg)',
+			  },
+			});
+		  },
+	],
 }

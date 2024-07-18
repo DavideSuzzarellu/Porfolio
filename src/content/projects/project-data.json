@@ -1,7 +1,7 @@
 [ 
     {
         "projectName": "Books List React Native",
-        "img": "/images/booksAPP.png",
+        "img": "/images/react_native.jpg",
         "description": "App de libros creada con React Native con Typescript para el front y Node.js con express y la conexion a la base de datos de Firestore(Firebase)",
         "technologies":[
             { "name": "React Native", "descriptionTec": "Para estructurar el contenido de la aplicación móvil, proporcionando una plataforma para desarrollar aplicaciones nativas para iOS y Android utilizando React." },
