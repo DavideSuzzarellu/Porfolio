@@ -24,31 +24,19 @@
 </script>
 
 <style>
-    #top-navbar {
-        animation: topnav 0.3s ease forwards;
-    }
-
-    #sticky-navbar {
-        opacity: 0;
-        transform: rotate(-45deg);
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
     #sticky-navbar.active {
         position: fixed;
-        top: 40%;
+        top: 0;
         right: 0;
         opacity: 1;
-        transform: rotate(0deg);
         animation: sticky-appear 0.3s ease forwards;
     }
 
     #sticky-navbar.inactive {
         position: fixed;
         top: 0;
-        right: 20%;
+        right: 0;
         opacity: 0;
-        transform: rotate(-45deg);
         animation: sticky-disappear 0.3s ease forwards;
     }
 
@@ -61,29 +49,25 @@
     @keyframes sticky-appear {
         from {
             top: 0;
-            right: 20%;
-            transform: rotate(-45deg);
+            right: 0;
             opacity: 0;
         }
         to {
-            top: 40%;
+            top: 30%;
             right: 0;
-            transform: rotate(0deg);
             opacity: 1;
         }
     }
 
     @keyframes sticky-disappear {
         from {
-            top: 40%;
+            top: 30%;
             right: 0;
-            transform: rotate(0deg);
             opacity: 1;
         }
         to {
-            top: 10%;
-            right: 20%;
-            transform: rotate(-45deg);
+            top: 0;
+            right: 0;
             opacity: 0;
         }
     }
