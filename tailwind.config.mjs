@@ -8,15 +8,17 @@ export default {
 		extend: {
 		  textColor: ['group-hover'],
 		},
+		
 		rotate: {
 			'0': '0deg',
 			'180': '180deg',
 		  },
-		  transform: {
-			'rotateX-0': 'rotateX(0deg)',
-			'rotateX-180': 'rotateX(180deg)',
-		  },
-	  },
+		  
+		transform: {
+		'rotateX-0': 'rotateX(0deg)',
+		'rotateX-180': 'rotateX(180deg)',
+		},
+	},
 	safelist: [
 		'text-orange-500', 'group-hover:text-orange-500',
 		'text-red-500', 'group-hover:text-red-500',
@@ -39,6 +41,6 @@ export default {
 				transform: 'rotateX(180deg)',
 			  },
 			});
-		  },
+		},
 	],
 }

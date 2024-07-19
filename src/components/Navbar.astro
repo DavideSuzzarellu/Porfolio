@@ -1,14 +1,8 @@
 ---
 import ToggleBtn from "./ToogleBtn.astro"
+import TopNavbar from "./TopNavbar.astro"
+import StickyNavbar from "./StickyNavbar.astro"
 ---
-<header class="w-auto items-center flex justify-center m-0 py-8 px-5">
-    <nav class="md:flex md:justify-center hidden border-2 py-3 px-14 rounded-full text-white md:items-center uppercase md:gap-10 font-bold">
-        <a class="p-2 hover:text-orange-700" href="#sobremi">Sobre Mi</a>
-        <a class="p-2 hover:text-orange-700" href="#skills">Skills</a>
-        <a class="p-2 hover:text-orange-700" href="#certificaciones">Estudios</a>
-        <a class="p-2 hover:text-orange-700" href="#proyectos">Proyectos</a>
-        <a class="p-2 hover:text-orange-700" href="#tips">Tips</a>
-    </nav>
-    <ToggleBtn />
-</header>
+<TopNavbar/>
+<StickyNavbar/>
 

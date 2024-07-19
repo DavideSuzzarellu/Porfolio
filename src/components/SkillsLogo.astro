@@ -7,11 +7,21 @@ type Props = {
 const { logoName } = Astro.props
 
 ---
-<article class="relative w-28 hover:rotateX-180 h-20 bg-gradient-to-br from-[#000037] to-[#6982db] p-3 rounded-lg flex items-center justify-center transition-transform duration-500 group">
-    <div class="absolute inset-0 flex items-center justify-center backface-hidden transition-transform duration-500 group-hover:rotateX-180">
+<article class="relative w-fit active:rotateX-180 h-fit hover:skew-x-6 flex items-center justify-center transition-transform duration-500 group">
+    <div class="inset-9 flex items-center justify-center backface-hidden transition-transform duration-300 group-hover:rotateX-180">
         <slot></slot>
     </div>
-    <span class="absolute inset-0 flex items-center justify-center backface-hidden transition-transform ease-in-out duration-500 opacity-0 group-hover:opacity-100 text-white group-hover:rotateX-180 group-hover:backface-visible">
+    <span class="absolute w-fit h-fit flex items-center justify-center transition-transform ease-in-out duration-500 opacity-0 group-hover:opacity-100 group-hover:duration-500 delay-150 group-hover:transition-all group-hover:visible text-white group-hover:rotateX-0 invisible">
         {logoName}
     </span>
 </article>
+
+
+<!-- <article class="relative w-fit active:rotateX-180 h-fit hover:skew-x-6 flex items-center justify-center transition-transform duration-500 group">
+    <div class="inset-9 flex items-center justify-center backface-hidden transition-transform duration-500 group-hover:rotateX-180">
+        <slot></slot>
+    </div>
+    <span class="absolute w-fit h-fit flex items-center justify-center transition-transform ease-in-out duration-500 opacity-0 group-hover:opacity-100 group-hover:duration-700 group-hover:transition-all text-white group-hover:rotateX-180 group-hover:backface-visible">
+        {logoName}
+    </span>
+</article> -->
