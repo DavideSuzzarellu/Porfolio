@@ -24,6 +24,7 @@ export default {
 		'text-red-500', 'group-hover:text-red-500',
 		'text-blue-500', 'group-hover:text-blue-500',
 		'text-green-500', 'group-hover:text-green-500',
+		'text-blue-300', 'group-hover:text-blue-300',
 	],
 	plugins: [
 		function ({ addUtilities }) {

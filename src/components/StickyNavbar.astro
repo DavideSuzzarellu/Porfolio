@@ -1,11 +1,9 @@
-<header id="sticky-navbar" class="bg-blue-600 hidden z-50 shadow-md shadow-white/80 text-white p-2 rounded-l-lg">
-    <nav class="flex flex-col gap-2 justify-center items-center">
-        <a class="z-10 p-2 hover:text-orange-700" href="#sobremi"><i class="fa-solid fa-user fa-lg"></i></a>
-        <a class="z-10 p-2 hover:text-orange-700 fa-lg" href="#skills"><i class="fa-solid fa-gears"></i></a>
-        <a class="z-10 p-2 hover:text-orange-700" href="#certificaciones"><i class="fa-solid fa-graduation-cap fa-lg"></i></a>
-        <a class="z-10 p-2 hover:text-orange-700" href="#proyectos"><i class="fa-solid fa-code fa-lg"></i></a>
-    </nav>
-</header>
+<nav id="sticky-navbar" class="bg-blue-600 hidden z-50 shadow-md shadow-white/80 text-white p-2 rounded-l-lg flex-col gap-2 justify-center items-center">
+    <a class="z-10 p-2 hover:text-orange-700" href="#sobremi"><i class="fa-solid fa-user fa-lg"></i></a>
+    <a class="z-10 p-2 hover:text-orange-700 fa-lg" href="#skills"><i class="fa-solid fa-gears"></i></a>
+    <a class="z-10 p-2 hover:text-orange-700" href="#certificaciones"><i class="fa-solid fa-graduation-cap fa-lg"></i></a>
+    <a class="z-10 p-2 hover:text-orange-700" href="#proyectos"><i class="fa-solid fa-code fa-lg"></i></a>
+</nav>
 
 <script>
     document.addEventListener('scroll', () => {
@@ -40,22 +38,18 @@
         animation: sticky-disappear 0.3s ease forwards;
     }
 
-    @media (max-width: 767.9px) {
-        #sticky-navbar {
-            display: none;
-        }
-    }   
-
     @keyframes sticky-appear {
         from {
             top: 0;
             right: 0;
             opacity: 0;
+            display: flex;
         }
         to {
             top: 30%;
             right: 0;
             opacity: 1;
+            display: flex;
         }
     }
 
@@ -64,11 +58,19 @@
             top: 30%;
             right: 0;
             opacity: 1;
+            display: flex;
         }
         to {
             top: 0;
             right: 0;
             opacity: 0;
+            display: flex;
         }
     }
+
+    @media (max-width: 767.9px) {
+        #sticky-navbar {
+            display: none;
+        }
+    }   
 </style>

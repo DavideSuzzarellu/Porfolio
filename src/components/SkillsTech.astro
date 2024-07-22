@@ -1,0 +1,63 @@
+---
+import SkillsLogo from "./SkillsLogo.astro"
+import AstroIcon from "./icons/AstroIcon.astro";
+import Boostrap from "./icons/Boostrap.astro"
+import CSS from "./icons/CSS.astro"
+import HTML from "./icons/HTML.astro"
+import Javascript from "./icons/Javascript.astro"
+import Python from "./icons/Python.astro"
+import React from "./icons/React.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Typescript from "./icons/Typescript.astro"
+import GitIcon from "./icons/GitIcon.astro";
+import GithubIcon from "./icons/GithubIcon.astro";
+import VisualStudioIcon from "./icons/VisualStudioIcon.astro";
+---
+<h3 class="mb-2 text-xl lg:ms-7 text-orange-400">Tecnológicas:</h3>
+<section class="flex gap-4 lg:ms-6 flex-wrap">
+    <div class="flex gap-4 lg:ms-6 flex-row items-center">
+        <h4>Lenguajes de Programación:</h4>
+        <SkillsLogo logoName="Javascript">
+            <Javascript size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Python">
+            <Python size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Typescript">
+            <Typescript size="50"/>
+        </SkillsLogo>
+    </div>
+    <div class="flex gap-4 lg:ms-6 flex-row items-center">
+        <h4>Desarrollo Frontend</h4>
+        <SkillsLogo logoName="Astro">
+            <AstroIcon size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Boostrap">
+            <Boostrap size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="CSS">
+            <CSS size="50"/>
+        </SkillsLogo>
+        <SkillsLogo  logoName="HTML">
+            <HTML size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="React">
+            <React size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Tailwind">
+            <Tailwind size="50"/>
+        </SkillsLogo/>
+    </div>
+    <div class="flex gap-4 lg:ms-6 flex-row items-center">
+        <h4>Herramientas:</h4>
+        <SkillsLogo logoName="Git">
+            <GitIcon size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Github">
+            <GithubIcon size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="VS Code">
+            <VisualStudioIcon size="50"/>
+        </SkillsLogo>
+    </div>
+</section>
