@@ -6,46 +6,58 @@
 </nav>
 
 <script>
-    document.addEventListener('scroll', () => {
+    let lastScrollY = 0;
+    window.addEventListener('scroll', () => {
         const stickyNavbar = document.getElementById('sticky-navbar');
         const scrollY = window.scrollY;
+        const width = window.innerWidth;
 
-        if (scrollY > 100) {
-            stickyNavbar.classList.remove('hidden');
-            stickyNavbar.classList.add('active');
-            stickyNavbar.classList.remove('inactive');
-        } else {
-            stickyNavbar.classList.remove('active');
-            stickyNavbar.classList.add('inactive');
+        if (width >  767.9)
+            if (scrollY > 100) {
+                stickyNavbar.classList.remove('hidden');
+                stickyNavbar.classList.add('active');
+                stickyNavbar.classList.remove('inactive');
+            } else {
+                stickyNavbar.classList.remove('active');
+                stickyNavbar.classList.add('inactive');
+            }
+        else {
+            if (scrollY < lastScrollY) {
+                stickyNavbar.classList.remove('hidden');
+                stickyNavbar.classList.add('active');
+                stickyNavbar.classList.remove('inactive');
+            }  else {
+                stickyNavbar.classList.remove('active');
+                stickyNavbar.classList.add('inactive');
+            }
         }
+        lastScrollY = scrollY;
     });
 </script>
 
 <style>
     #sticky-navbar.active {
-        position: fixed;
-        top: 0;
-        right: 0;
-        opacity: 1;
         animation: sticky-appear 0.3s ease forwards;
     }
 
     #sticky-navbar.inactive {
-        position: fixed;
-        top: 0;
-        right: 0;
-        opacity: 0;
         animation: sticky-disappear 0.3s ease forwards;
+    }
+
+    .hidden {
+        display: none;
     }
 
     @keyframes sticky-appear {
         from {
+            position: fixed;
             top: 0;
             right: 0;
             opacity: 0;
             display: flex;
         }
         to {
+            position: fixed;
             top: 30%;
             right: 0;
             opacity: 1;
@@ -55,12 +67,14 @@
 
     @keyframes sticky-disappear {
         from {
+            position: fixed;
             top: 30%;
             right: 0;
             opacity: 1;
             display: flex;
         }
         to {
+            position: fixed;
             top: 0;
             right: 0;
             opacity: 0;
@@ -70,7 +84,60 @@
 
     @media (max-width: 767.9px) {
         #sticky-navbar {
-            visibility: hidden;
+            position: fixed;
+            padding-inline: 1.5rem;
+            padding-block: 0.5rem;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 15px;
+            z-index: 50; 
+            display: flex; 
+            flex-direction: row;
+            gap: 1rem;
+            width: fit-content;
+            
         }
+
+        #sticky-navbar.active {
+            animation: sticky-appear 0.3s ease forwards;
+        }
+
+        #sticky-navbar.inactive {
+            animation: sticky-disappear 0.3s ease forwards;
+        }
+
+        @keyframes sticky-appear {
+            from {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                opacity: 0;
+            }
+            
+            to {
+                position: fixed;
+                top: 5%;
+                right: 25%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes sticky-disappear {
+        from {
+            position: fixed;
+            top: 5%;
+            right: 25%;
+            opacity: 1;
+        }
+
+        to {
+            position: fixed;
+            top: 0;
+            right: 25%;
+            opacity: 0;
+            }
+        }
+
     }   
 </style>

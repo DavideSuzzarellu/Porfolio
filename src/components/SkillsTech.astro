@@ -12,31 +12,29 @@ import Typescript from "./icons/Typescript.astro"
 import GitIcon from "./icons/GitIcon.astro";
 import GithubIcon from "./icons/GithubIcon.astro";
 import VisualStudioIcon from "./icons/VisualStudioIcon.astro";
+import FlaskIcon from "./icons/FlaskIcon.astro";
 ---
 <h3 class="mb-2 text-xl lg:ms-7 text-orange-400">Tecnológicas:</h3>
 <section class="flex gap-4 lg:ms-6 flex-wrap">
     <div class="flex gap-4 lg:ms-1 flex-row items-center">
-        <h4 class="text-orange-200">Lenguajes de Programación:</h4>
-        <SkillsLogo logoName="Javascript">
-            <Javascript size="50"/>
-        </SkillsLogo>
+        <h4 class="text-orange-200">Desarrollo Backend:</h4>
         <SkillsLogo logoName="Python">
             <Python size="50"/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Flask">
+            <FlaskIcon size="50"/>
+        </SkillsLogo>
+    </div>
+    <div class="flex gap-4 lg:ms-1 flex-wrap items-center">
+        <h4 class="text-orange-200">Desarrollo Frontend:</h4>
+        <SkillsLogo logoName="Javascript">
+            <Javascript size="50"/>
         </SkillsLogo>
         <SkillsLogo logoName="Typescript">
             <Typescript size="50"/>
         </SkillsLogo>
-    </div>
-    <div class="flex gap-4 lg:ms-1 flex-row items-center">
-        <h4 class="text-orange-200">Desarrollo Frontend</h4>
         <SkillsLogo logoName="Astro">
             <AstroIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Boostrap">
-            <Boostrap size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="CSS">
-            <CSS size="50"/>
         </SkillsLogo>
         <SkillsLogo  logoName="HTML">
             <HTML size="50"/>
@@ -44,9 +42,18 @@ import VisualStudioIcon from "./icons/VisualStudioIcon.astro";
         <SkillsLogo logoName="React">
             <React size="50"/>
         </SkillsLogo>
+    </div>
+    <div class="flex gap-4 lg:ms-1 flex-wrap items-center">
+        <h4 class="text-orange-200">Estilos:</h4>
+        <SkillsLogo logoName="CSS">
+            <CSS size="50"/>
+        </SkillsLogo>
         <SkillsLogo logoName="Tailwind">
             <Tailwind size="50"/>
-        </SkillsLogo/>
+        </SkillsLogo>
+        <SkillsLogo logoName="Bootstrap">
+            <Boostrap size="50"/>
+        </SkillsLogo>
     </div>
     <div class="flex gap-4 lg:ms-1 flex-row items-center">
         <h4 class="text-orange-200">Herramientas:</h4>

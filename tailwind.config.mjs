@@ -43,5 +43,6 @@ export default {
 			  },
 			});
 		},
+		require("@xpd/tailwind-3dtransforms")
 	],
 }
