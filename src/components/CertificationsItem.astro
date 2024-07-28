@@ -1,5 +1,6 @@
 ---
 import type { Certification } from '../config/config';
+import ProjectsTech from './ProjectsTech.astro';
 
 type Props = {
     certification: Certification;
@@ -13,10 +14,13 @@ const { certification } = Astro.props;
     <h3 class="text-lg font-semibold text-orange-200">{certification.company}</h3>
     <p class="text-sm mb-2 text-slate-300">{certification.year}</p>
     <p class="mb-3 text-sm text-pretty">{certification.description}</p>
-    <ul class="flex flex-wrap gap-2">
+    <ul class="flex flex-wrap items-start gap-4 mb-4 mt-2">
         {certification.technologies.map(tech => (
-            <li class="px-4 py-1 shadow-inner shadow-slate-600 rounded-xl w-fit bg-slate-800 border border-gray-800">
-                <span class="font-semibold text-orange-300"><p class="text-sm">{tech.name}</p></span>
+            <li>
+                <ProjectsTech 
+                    name={tech.name} 
+                    icon={tech.icon} 
+                />
             </li>
         ))}
     </ul>

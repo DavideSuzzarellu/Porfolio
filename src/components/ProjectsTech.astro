@@ -1,0 +1,131 @@
+---
+import ReactIcon from './icons/ReactIcon.astro';
+import TypescriptIcon from './icons/TypescriptIcon.astro';
+import JavascriptIcon from './icons/JavascriptIcon.astro';
+import AstroIcon from './icons/AstroIcon.astro';
+import BoostrapIcon from './icons/BoostrapIcon.astro';
+import CSSIcon from './icons/CSSIcon.astro';
+import FlaskIcon from './icons/FlaskIcon.astro';
+import HTMLIcon from './icons/HTMLIcon.astro';
+import SQLAlchemyIcon from './icons/SQLAlchemyIcon.astro';
+import TailwindIcon from './icons/TailwindIcon.astro';
+import MapsIcon from './icons/MapsIcon.astro';
+import CloudinaryIcon from './icons/CloudinaryIcon.astro';
+import PythonIcon from './icons/PythonIcon.astro';
+import ReactRouterIcon from './icons/ReactRouterIcon.astro';
+import NodeJSIcon from './icons/NodeJSIcon.astro';
+import ExpressIcon from './icons/ExpressIcon.astro';
+import FirebaseIcon from './icons/FirebaseIcon.astro';
+import ReactBootstrapIcon from './icons/ReactBootstrapIcon.astro';
+import JWTIcon from './icons/JWTIcon.astro';
+import StripeIcon from './icons/StripeIcon.astro';
+import PostgresSQLIcon from './icons/PostgresSQLIcon.astro';
+
+type Props = {
+    name: string,
+    icon?: string,
+};
+
+const { name, icon } = Astro.props;
+
+let TechIconComponent: any;
+let classes: string;
+
+switch (icon) {
+    case 'ReactIcon':
+        TechIconComponent = ReactIcon;
+        classes = "bg-[#021F71] border-[#197c9f] text-[#197c9f] shadow-[#197c9f]"
+        break;
+    case 'TypescriptIcon':
+        TechIconComponent = TypescriptIcon;
+        classes = "bg-[#41F5F9] border-[#1976d2] text-[#1976d2] shadow-[#1976d2]"
+        break;
+    case 'JavascriptIcon':
+        TechIconComponent = JavascriptIcon;
+        classes = "bg-[#885206] border-slate-900 text-[#ffd600] shadow-[#ffd600]"
+        break;
+    case 'AstroIcon':
+        TechIconComponent = AstroIcon;
+        classes = "bg-white border-black text-black shadow-[#FF5D01]"
+        break;
+    case 'BoostrapIcon':
+        TechIconComponent = BoostrapIcon;
+        classes = "bg-[#E9F2E0] border-[#6C19FF] text-[#6C19FF] shadow-[#6C19FF] "
+        break;
+    case 'CSSIcon':
+        TechIconComponent = CSSIcon;
+        classes = "bg-[#C5EFF7] border-[#2965f1] text-[#2965f1] shadow-[#2965f1]"
+        break;
+    case 'FlaskIcon':
+        TechIconComponent = FlaskIcon;
+        classes = "bg-[#78716c] border-white shadow-white"
+        break;
+    case 'HTMLIcon':
+        TechIconComponent = HTMLIcon;
+        classes = "bg-[#350C09] border-[#E65100] text-[#E65100] shadow-[#E65100]"
+        break;
+    case 'SQLAlchemyIcon':
+        TechIconComponent = SQLAlchemyIcon;
+        classes = "bg-slate-200 border-[#333] text-[#333] shadow-[#ca2727]"
+        break;
+    case 'TailwindIcon':
+        TechIconComponent = TailwindIcon;
+        classes = "bg-[#254253] border-[#00ACC1] text-[#00ACC1] shadow-[#00ACC1]"
+        break;
+    case 'MapsIcon':
+        TechIconComponent = MapsIcon;
+        classes = "bg-[#4B2525] border-[#fcc60e] shadow-[#48B564] text-[#48B564]"
+        break;
+    case 'CloudinaryIcon':
+        TechIconComponent = CloudinaryIcon;
+        classes = "bg-[#0C3003] border-[#DC8327] text-[#0071CE] shadow-[#DC8327]"
+        break;
+    case 'PythonIcon':
+        TechIconComponent = PythonIcon;
+        classes = "bg-[#244919] border-[#0277BD] shadow-[#FFC107] text-[#FFC107]"
+        break;
+    case 'ReactRouterIcon':
+        TechIconComponent = ReactRouterIcon;
+        classes = "bg-[#F8BCBC] border-[#D0021B] shadow-[#D0021B] text-[#D0021B]"
+        break;
+    case 'NodeJSIcon':
+        TechIconComponent = NodeJSIcon;
+        classes = "bg-[#06b485] border-[#37474F] text-[#37474F] shadow-[#388e3c]"
+        break;
+    case 'ExpressIcon':
+        TechIconComponent = ExpressIcon;
+        classes = "bg-slate-300 border-slate-600 text-black shadow-white"
+        break;
+    case 'FirebaseIcon':
+        TechIconComponent = FirebaseIcon;
+        classes = "bg-[#823B07] border-[#ff8f00] text-[#ff8f00] shadow-[#ff8f00]"
+        break;
+    case 'ReactBootstrapIcon':
+        TechIconComponent = ReactBootstrapIcon;
+        classes = "bg-[#2E4A8B] border-[#41E0FF] text-[#41E0FF] shadow-[#41E0FF]"
+        break;
+    case 'JWTIcon':
+        TechIconComponent = JWTIcon;
+        classes = "bg-[#020D42] border-[#29b6f6] text-[#D500F9] shadow-[#f50057]"
+        break;
+    case 'StripeIcon':
+        TechIconComponent = StripeIcon;
+        classes = "bg-[#0B1922] border-[#6673FF] text-[#6673FF] shadow-[#6673FF]"
+        break;
+    case 'PostgresSQLIcon':
+        TechIconComponent = PostgresSQLIcon;
+        classes = "bg-[#ACF3F3] border-[#336791] text-[#336791] shadow-[#336791]"
+        break;
+    default:
+        TechIconComponent = null;
+        classes = "bg-[#78716c] shadow-white px-3 py-1.5"
+}
+---
+
+
+
+<span class={`flex flex-row border shadow-md items-center justify-center gap-2 ${classes} px-3 py-1 rounded-full`}>
+    {TechIconComponent && <TechIconComponent size={25} />}
+    <p class="text-sm text-center">{name}</p>
+</span>
+

@@ -4,11 +4,12 @@
         "img": "/images/react_native.jpg",
         "description": "App de libros creada con React Native con Typescript para el front y Node.js con express y la conexion a la base de datos de Firestore(Firebase)",
         "technologies":[
-            { "name": "React Native", "descriptionTec": "Para estructurar el contenido de la aplicación móvil, proporcionando una plataforma para desarrollar aplicaciones nativas para iOS y Android utilizando React." },
-            { "name": "Typescript", "descriptionTec": "Para aplicar tipos estáticos al código JavaScript, mejorando la robustez y mantenibilidad del proyecto." },
-            { "name": "Node.js", "descriptionTec": "Para ejecutar el servidor de backend de manera eficiente." },
-            { "name": "Express", "descriptionTec": "Para manejar el enrutamiento de la aplicación y facilitar la navegación." },
-            { "name": "Firestore (Firebase)", "descriptionTec": "Para gestionar la base de datos NoSQL en tiempo real, permitiendo una sincronización rápida y eficiente de datos entre la aplicación y el backend." }        ]	
+            { "name": "React Native", "icon": "ReactIcon"},
+            { "name": "Typescript", "icon": "TypescriptIcon"},
+            { "name": "Node.js", "icon": "NodeJSIcon"},
+            { "name": "Express", "icon": "ExpressIcon" },
+            { "name": "Firestore (Firebase)", "icon": "FirebaseIcon" }        
+        ]	
     },
 
     {
@@ -16,12 +17,12 @@
         "img": "/images/housy-space-web.png",
         "description": "Página web de presentación para una inmobiliaria utilizando React, Tailwind CSS y JavaScript, combinado con HTML y CSS, enfocada en destacar propiedades y servicios de la empresa.",
         "technologies":[
-            { "name": "HTML", "descriptionTec": "Para estructurar el contenido de la página web." },
-            { "name": "CSS", "descriptionTec": "Para aplicar estilos personalizados y complementar Tailwind CSS." },
-            { "name": "Tailwind CSS", "descriptionTec": "Para diseñar una interfaz moderna y estilizada con clases de utilidad." },
-            { "name": "React Router", "descriptionTec": "Para manejar el enrutamiento de la aplicación y facilitar la navegación." },
-            { "name": "Javascript", "descriptionTec": "Lenguaje esencial para el desarrollo web dinámico e interactivo." },
-            { "name": "React", "descriptionTec": "Para crear una interfaz de usuario dinámica y reactiva." }
+            { "name": "HTML", "icon": "HTMLIcon" },
+            { "name": "CSS", "icon": "CSSIcon" },
+            { "name": "Tailwind CSS", "icon": "TailwindIcon" },
+            { "name": "React Router", "icon": "ReactRouterIcon" },
+            { "name": "Javascript", "icon": "JavascriptIcon" },
+            { "name": "React", "icon": "ReactIcon" }
         ]	
     },
     
@@ -30,21 +31,21 @@
         "img": "/images/fitness-date.png",
         "description":"Plataforma web para entrenadores y usuarios que permite reservar y pagar clases de entrenamiento directamente en la plataforma.",
         "technologies": [
-            { "name": "HTML", "descriptionTec": "Para estructurar el contenido de la página web." },
-            { "name": "CSS", "descriptionTec": "Para aplicar estilos personalizados y complementar Tailwind CSS." },
-            { "name": "React Router", "descriptionTec": "Para manejar el enrutamiento de la aplicación y facilitar la navegación." },
-            { "name": "Javascript", "descriptionTec": "Lenguaje esencial para el desarrollo web dinámico e interactivo." },
-            { "name": "React", "descriptionTec": "Para crear una interfaz de usuario dinámica y reactiva." },
-            { "name": "React-Bootstrap", "descriptionTec": "Implementación de componentes de interfaz de usuario responsivos y modernos para aplicaciones web utilizando React, basados en el framework Bootstrap. Facilita el desarrollo ágil y la creación de interfaces consistentes y estilizadas." },
-            { "name": "Python", "descriptionTec": "Uso de Python para la gestión de la parte backend." },
-            { "name": "Flask", "descriptionTec": "Framework ligero de Python utilizado para la creación de API y la gestión de rutas, vistas y lógica de negocio." },
-            { "name": "SQLAlchemy", "descriptionTec": "Biblioteca de Python utilizada para la gestión de bases de datos relacionales en la parte backend de aplicaciones web. SQLAlchemy facilita la creación de consultas SQL de manera programática, proporcionando un ORM (Object-Relational Mapping) para interactuar con la base de datos de forma eficiente y segura." },
-            { "name": "Google Maps API", "descriptionTec": "Conexión a la API de Google para la ubicación de las clases." },
-            { "name": "Flask-Mail", "descriptionTec": "Uso de Flask-Mail para enviar confirmación de registro, y uso de ItsDangerous para confirmarla." },
-            { "name": "ItsDangerous", "descriptionTec": "Utilizado para la confirmación de la identidad de la persona que confirma el correo de registro mediante un token de validez única." },
-            { "name": "Cloudinary", "descriptionTec": "Servicio utilizado para almacenar imágenes de manera segura en la nube, evitando así almacenarlas directamente en la base de datos del sistema." },
-            { "name": "Jason Web Token (JWT)", "descriptionTec": "Autenticación de usuario a través de JWT." },
-            { "name": "Stripe", "descriptionTec": "Uso de Stripe para permitir los pagos." }
+            { "name": "HTML", "icon": "HTMLIcon" },
+            { "name": "CSS", "icon": "CSSIcon" },
+            { "name": "Javascript", "icon": "JavascriptIcon" },
+            { "name": "React", "icon": "ReactIcon" },
+            { "name": "React Router", "icon": "ReactRouterIcon" },
+            { "name": "React-Bootstrap", "icon": "ReactBootstrapIcon" },
+            { "name": "Python", "icon": "PythonIcon" },
+            { "name": "Flask", "icon": "FlaskIcon" },
+            { "name": "Flask-Mail", "icon": "" },
+            { "name": "ItsDangerous", "icon": "" },
+            { "name": "SQLAlchemy", "icon": "SQLAlchemyIcon" },
+            { "name": "Google Maps API", "icon": "MapsIcon" },
+            { "name": "Cloudinary", "icon": "CloudinaryIcon" },
+            { "name": "JSON Web Token (JWT)", "icon": "JWTIcon" },
+            { "name": "Stripe", "icon": "StripeIcon" }
           ]	
     }
 ]

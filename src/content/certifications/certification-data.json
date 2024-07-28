@@ -5,13 +5,13 @@
         "year": "2024",
         "description": "Este curso ha proporcionado las habilidades necesarias para desarrollar aplicaciones web modernas y optimizadas, preparándome para enfrentar los desafíos del desarrollo frontend en el entorno profesional actual. Durante el curso, se han cubierto los siguientes temas:",
         "technologies":[
-            { "name": "HTML", "icon" : ""},
-            { "name": "CSS", "icon" : ""},
-            { "name": "Tailwind CSS", "icon" : ""},
-            { "name": "Astro", "icon" : ""},
-            { "name": "Typescript", "icon" : ""},
-            { "name": "Javascript", "icon" : ""},
-            { "name": "React", "icon" : ""}
+            { "name": "HTML", "icon" : "HTMLIcon"},
+            { "name": "CSS", "icon" : "CSSIcon"},
+            { "name": "Tailwind CSS", "icon" : "TailwindIcon"},
+            { "name": "Astro", "icon" : "AstroIcon"},
+            { "name": "Typescript", "icon" : "TypescriptIcon"},
+            { "name": "Javascript", "icon" : "JavascriptIcon"},
+            { "name": "React", "icon" : "ReactIcon"}
         ]
     },
     {
@@ -20,13 +20,13 @@
         "year":"2023 - 2024",
         "description":"Durante este curso intensivo en 4 Geeks Academy, he adquirido las habilidades necesarias para convertirme en desarrollador Full Stack. Utilizando tecnologías como HTML, CSS, JavaScript, React, Python, Bootstrap y SQL, he creado una aplicación web completa. Desde la creación de la estructura y el diseño visual hasta la implementación de funcionalidades dinámicas y la gestión de datos en una base de datos relacional.",
         "technologies": [
-            { "name": "HTML", "icon" : ""},
-            { "name": "CSS", "icon" : ""},
-            { "name": "Javascript", "icon" : ""},
-            { "name": "React", "icon" : ""},
-            { "name": "Python", "icon" : ""},
-            { "name": "Bootstrap", "icon" : ""},
-            { "name": "SQL", "icon" : ""}
+            { "name": "HTML", "icon" : "HTMLIcon"},
+            { "name": "CSS", "icon" : "CSSIcon"},
+            { "name": "Javascript", "icon" : "JavascriptIcon"},
+            { "name": "React", "icon" : "ReactIcon"},
+            { "name": "Python", "icon" : "PythonIcon"},
+            { "name": "Bootstrap", "icon" : "BoostrapIcon"},
+            { "name": "Postgres SQL", "icon" : "PostgresSQLIcon"}
         ]
     },
     

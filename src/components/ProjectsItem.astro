@@ -1,6 +1,17 @@
 ---
 import type { Project } from '../config/config';
 import { Image } from 'astro:assets';
+import ReactIcon from './icons/ReactIcon.astro';
+import TypescriptIcon from './icons/TypescriptIcon.astro';
+import ProjectsTech from './ProjectsTech.astro';
+import JavascriptIcon from './icons/JavascriptIcon.astro';
+import AstroIcon from './icons/AstroIcon.astro';
+import BoostrapIcon from './icons/BoostrapIcon.astro';
+import CSSIcon from './icons/CSSIcon.astro';
+import FlaskIcon from './icons/FlaskIcon.astro';
+import HTMLIcon from './icons/HTMLIcon.astro';
+import SQLAlchemyIcon from './icons/SQLAlchemyIcon.astro';
+import TailwindIcon from './icons/TailwindIcon.astro';
 
 type Props = {
   project: Project;
@@ -13,12 +24,17 @@ const { project  } = Astro.props;
     <h4 class="text-xl relative font-semibold text-orange-400">{project.projectName}</h4>
     <p class="text-pretty text-slate-300 mb-2">{project.description}</p>
     <h3 class="text-orange-200">Tecnologias:</h3>
-    <ul class="flex flex-col items-start gap-4 mb-4 mt-2">
-        {project.technologies.map(tech => (
-            <li class="px-3 py-2 shadow-inner shadow-slate-600 rounded-xl w-fit bg-slate-800 border border-gray-800">
-                 <p class="font-semibold text-orange-300">{tech.name}:</p><p class="text-sm">{tech.descriptionTec}</span>
-            </li>
-        ))}
+    <ul class="flex flex-wrap items-start gap-4 mb-4 mt-2">
+        {project.technologies.map(tech => {
+            return (
+                <li>
+                    <ProjectsTech 
+                        name={tech.name} 
+                        icon={tech.icon} 
+                    />
+                </li>
+                );
+          })}
     </ul>
     <Image class="h-auto w-auto rounded shadow-2xl shadow-white/10 object-cover" src={project.img} loading="lazy" alt="Imagen Proyecto" width="300" height="300"/>
 </article>

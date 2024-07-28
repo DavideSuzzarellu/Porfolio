@@ -1,9 +1,9 @@
 import { z, defineCollection } from 'astro:content';
 
 //*PROJECTS
-const technologySchema = z.object({
+export const technologySchema = z.object({
     name: z.string(),
-    descriptionTec: z.string(),
+    icon: z.string().optional(),
 });
 
 const projectSchema = z.object({
