@@ -1,0 +1,11 @@
+---
+type Props = {
+    navType?: string
+}
+const { navType } = Astro.props;
+---
+
+<a class="z-10 p-2 flex items-center justify-center gap-2 hover:text-orange-700" href="#sobremi"><i class="fa-solid fa-user fa-lg"></i><span class={`${navType == "sticky" ? "hidden" : "md:block"}`}>Sobre Mi</span></a>
+<a class="z-10  flex items-center justify-center gap-2 p-2 hover:text-orange-700" href="#skills"><i class="fa-solid fa-lg fa-gears"></i><span class={`${navType == "sticky" ? "hidden" : "md:block"}`}>Skills</span></a>
+<a class="z-10 flex items-center justify-center gap-2 p-2 hover:text-orange-700" href="#certificaciones"><i class="fa-solid fa-graduation-cap fa-lg"></i><span class={`${navType == "sticky" ? "hidden" : "md:block"}`}>Estudios</span></a>
+<a class="z-10 flex items-center justify-center gap-2 p-2 hover:text-orange-700" href="#proyectos"><i class="fa-solid fa-code fa-lg"></i><span class={`${navType == "sticky" ? "hidden" : "md:block"}`}class="md:block hidden">Proyectos</span></a>

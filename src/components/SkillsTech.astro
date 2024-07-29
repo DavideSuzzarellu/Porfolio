@@ -14,61 +14,73 @@ import GitIcon from "./icons/GitIcon.astro";
 import GithubIcon from "./icons/GithubIcon.astro";
 import VisualStudioIcon from "./icons/VisualStudioIcon.astro";
 import FlaskIcon from "./icons/FlaskIcon.astro";
+import NodeJSIcon from "./icons/NodeJSIcon.astro";
 ---
 <h3 class="mb-2 text-xl lg:ms-7 text-orange-400">Tecnológicas:</h3>
-<section class="flex gap-4 lg:ms-6 flex-wrap">
-    <div class="flex gap-4 lg:ms-1 flex-row items-center">
+<section class="flex gap-4 lg:ms-6 flex-col">
+    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Desarrollo Backend:</h4>
-        <SkillsLogo logoName="Python">
-            <PythonIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Flask">
-            <FlaskIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="SQL Alchemy">
-            <SQLAlchemyIcon size="50"/>
-        </SkillsLogo>
+        <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
+            <SkillsLogo logoName="Python">
+                <PythonIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="NodeJs">
+                <NodeJSIcon size="40"/>
+            </SkillsLogo>
+        </div>
     </div>
-    <div class="flex gap-4 lg:ms-1 flex-wrap items-center">
+    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Desarrollo Frontend:</h4>
-        <SkillsLogo logoName="Javascript">
-            <JavascriptIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Typescript">
-            <TypescriptIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Astro">
-            <AstroIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo  logoName="HTML">
-            <HTMLIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="React">
-            <ReactIcon size="50"/>
-        </SkillsLogo>
+        <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
+            <SkillsLogo logoName="Javascript">
+                <JavascriptIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="Typescript">
+                <TypescriptIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo  logoName="HTML">
+                <HTMLIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="CSS">
+                <CSSIcon size="40"/>
+            </SkillsLogo>
+        </div>
     </div>
-    <div class="flex gap-4 lg:ms-1 flex-wrap items-center">
-        <h4 class="text-orange-200">Estilos:</h4>
-        <SkillsLogo logoName="CSS">
-            <CSSIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Tailwind">
-            <TailwindIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Bootstrap">
-            <BoostrapIcon size="50"/>
-        </SkillsLogo>
+    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
+        <h4 class="text-orange-200">Bibliotecas o Frameworks:</h4>
+        <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
+            <SkillsLogo logoName="Flask">
+                <FlaskIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="SQL Alchemy">
+                <SQLAlchemyIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="Astro">
+                <AstroIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="React">
+                <ReactIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="Tailwind">
+                <TailwindIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="Bootstrap">
+                <BoostrapIcon size="40"/>
+            </SkillsLogo>
+        </div>
     </div>
-    <div class="flex gap-4 lg:ms-1 flex-row items-center">
+    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Herramientas:</h4>
-        <SkillsLogo logoName="Git">
-            <GitIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="Github">
-            <GithubIcon size="50"/>
-        </SkillsLogo>
-        <SkillsLogo logoName="VS Code">
-            <VisualStudioIcon size="50"/>
-        </SkillsLogo>
+        <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
+            <SkillsLogo classes="bg-red-200" logoName="Git">
+                <GitIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="Github">
+                <GithubIcon size="40"/>
+            </SkillsLogo>
+            <SkillsLogo logoName="VS Code">
+                <VisualStudioIcon size="40"/>
+            </SkillsLogo>
+        </div>
     </div>
 </section>

@@ -22,7 +22,7 @@ import StripeIcon from './icons/StripeIcon.astro';
 import PostgresSQLIcon from './icons/PostgresSQLIcon.astro';
 
 type Props = {
-    name: string,
+    name?: string,
     icon?: string,
 };
 
@@ -125,7 +125,7 @@ switch (icon) {
 
 
 <span class={`flex flex-row border shadow-md items-center justify-center gap-2 ${classes} px-3 py-1 rounded-full`}>
-    {TechIconComponent && <TechIconComponent size={25} />}
+    {TechIconComponent && <TechIconComponent size={25}/>}
     <p class="text-sm text-center">{name}</p>
 </span>
 

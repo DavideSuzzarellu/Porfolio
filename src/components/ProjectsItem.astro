@@ -3,7 +3,7 @@ import type { Project } from '../config/config';
 import { Image } from 'astro:assets';
 import ReactIcon from './icons/ReactIcon.astro';
 import TypescriptIcon from './icons/TypescriptIcon.astro';
-import ProjectsTech from './ProjectsTech.astro';
+import TechArticle from './TechArticle.astro';
 import JavascriptIcon from './icons/JavascriptIcon.astro';
 import AstroIcon from './icons/AstroIcon.astro';
 import BoostrapIcon from './icons/BoostrapIcon.astro';
@@ -28,7 +28,7 @@ const { project  } = Astro.props;
         {project.technologies.map(tech => {
             return (
                 <li>
-                    <ProjectsTech 
+                    <TechArticle 
                         name={tech.name} 
                         icon={tech.icon} 
                     />

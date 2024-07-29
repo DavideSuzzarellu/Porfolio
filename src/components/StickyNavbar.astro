@@ -1,8 +1,9 @@
-<nav id="sticky-navbar" class="bg-blue-600 hidden z-50 shadow-md shadow-white/80 text-white p-2 rounded-l-lg flex-col gap-2 justify-center items-center">
-    <a class="z-10 p-2 hover:text-orange-700" href="#sobremi"><i class="fa-solid fa-user fa-lg"></i></a>
-    <a class="z-10 p-2 hover:text-orange-700 fa-lg" href="#skills"><i class="fa-solid fa-gears"></i></a>
-    <a class="z-10 p-2 hover:text-orange-700" href="#certificaciones"><i class="fa-solid fa-graduation-cap fa-lg"></i></a>
-    <a class="z-10 p-2 hover:text-orange-700" href="#proyectos"><i class="fa-solid fa-code fa-lg"></i></a>
+---
+import Menu from "./Menu.astro"
+---
+
+<nav id="sticky-navbar" class="bg-blue-900 hidden z-50 shadow-[0_0px_100px_5px] shadow-orange-600 text-white px-3 py-6 rounded-l-lg flex-col gap-6 items-center">
+    <Menu navType="sticky"/>
 </nav>
 
 <script>
@@ -86,11 +87,11 @@
         #sticky-navbar {
             position: fixed;
             padding-inline: 1.5rem;
-            padding-block: 0.5rem;
+            padding-block: 0.8rem;
             top: 5%;
             left: 50%;
             transform: translateX(-50%);
-            border-radius: 15px;
+            border-radius: 10px;
             z-index: 50; 
             display: flex; 
             flex-direction: row;
