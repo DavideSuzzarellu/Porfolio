@@ -1,17 +1,9 @@
 ---
 import type { Project } from '../config/config';
 import { Image } from 'astro:assets';
-import ReactIcon from './icons/ReactIcon.astro';
-import TypescriptIcon from './icons/TypescriptIcon.astro';
+import GithubIcon from '../components/icons/GithubIcon.astro'
 import TechArticle from './TechArticle.astro';
-import JavascriptIcon from './icons/JavascriptIcon.astro';
-import AstroIcon from './icons/AstroIcon.astro';
-import BoostrapIcon from './icons/BoostrapIcon.astro';
-import CSSIcon from './icons/CSSIcon.astro';
-import FlaskIcon from './icons/FlaskIcon.astro';
-import HTMLIcon from './icons/HTMLIcon.astro';
-import SQLAlchemyIcon from './icons/SQLAlchemyIcon.astro';
-import TailwindIcon from './icons/TailwindIcon.astro';
+
 
 type Props = {
   project: Project;
@@ -21,7 +13,10 @@ const { project  } = Astro.props;
 ---
 
 <article class="mb-20 text-white flex flex-col justify-center gap-1">
-    <h3 class="text-xl relative font-semibold text-orange-400">{project.projectName}</h3>
+    <div class="flex flex-row gap-2 items-center ">
+        <h3 class="text-xl relative font-semibold text-orange-400">{project.projectName}</h3>
+        <TechArticle name="Github" icon="GithubIcon"/>
+    </div>
     <p class="text-pretty text-slate-300 mb-2">{project.description}</p>
     <h4 class="text-orange-200">Tecnologias:</h4>
     <ul class="flex flex-wrap items-start gap-4 mb-4 mt-2">
@@ -36,5 +31,5 @@ const { project  } = Astro.props;
                 );
           })}
     </ul>
-    <Image class="h-[310px] mt-2 overflow-hidden w-auto rounded-md shadow-white/10 object-contain" src={project.img} onblur='' loading="lazy" alt="Imagen Proyecto" width="600" height="300"/>
+    <Image class="max-h-[310px] mt-2 overflow-hidden w-fit mx-auto rounded-md shadow-white/10 object-contain" src={project.img} onblur='' loading="lazy" alt="Imagen Proyecto" width="600" height="300"/>
 </article>
