@@ -1,5 +1,5 @@
 ---
-import SkillsLogo from "./SkillsLogo.astro"
+import SkillsCard from "./SkillsCard.astro"
 import SQLAlchemyIcon from "./icons/SQLAlchemyIcon.astro";
 import AstroIcon from "./icons/AstroIcon.astro";
 import BoostrapIcon from "./icons/BoostrapIcon.astro"
@@ -15,72 +15,73 @@ import GithubIcon from "./icons/GithubIcon.astro";
 import VisualStudioIcon from "./icons/VisualStudioIcon.astro";
 import FlaskIcon from "./icons/FlaskIcon.astro";
 import NodeJSIcon from "./icons/NodeJSIcon.astro";
+import { iconStyles } from "../styles/styles";
 ---
 <h3 class="mb-2 text-xl lg:ms-7 text-orange-400">Tecnológicas:</h3>
-<section class="flex gap-4 lg:ms-6 flex-col">
-    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
+<section class="flex gap-5 lg:ms-6 mb-14 flex-col">
+    <div class="flex gap-2 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Desarrollo Backend:</h4>
         <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
-            <SkillsLogo logoName="Python">
+            <SkillsCard classes={iconStyles.PythonIcon} logoName="Python">
                 <PythonIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="NodeJs">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.NodeJSIcon} logoName="NodeJS">
                 <NodeJSIcon size="40"/>
-            </SkillsLogo>
+            </SkillsCard>
         </div>
     </div>
-    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
+    <div class="flex gap-2 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Desarrollo Frontend:</h4>
         <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
-            <SkillsLogo logoName="Javascript">
+            <SkillsCard classes={iconStyles.JavascriptIcon}  logoName="Javascript">
                 <JavascriptIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="Typescript">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.TypescriptIcon}  logoName="Typescript">
                 <TypescriptIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo  logoName="HTML">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.HTMLIcon}  logoName="HTML">
                 <HTMLIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="CSS">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.CSSIcon} logoName="CSS">
                 <CSSIcon size="40"/>
-            </SkillsLogo>
+            </SkillsCard>
         </div>
     </div>
-    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
+    <div class="flex gap-2 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Bibliotecas o Frameworks:</h4>
         <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
-            <SkillsLogo logoName="Flask">
+            <SkillsCard classes={iconStyles.FlaskIcon}  logoName="Flask">
                 <FlaskIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="SQL Alchemy">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.SQLAlchemyIcon} logoName="SQL Alchemy">
                 <SQLAlchemyIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="Astro">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.AstroIcon} logoName="Astro">
                 <AstroIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="React">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.ReactIcon} logoName="React">
                 <ReactIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="Tailwind">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.TailwindIcon} logoName="Tailwind">
                 <TailwindIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="Bootstrap">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.BoostrapIcon} logoName="Boostrap">
                 <BoostrapIcon size="40"/>
-            </SkillsLogo>
+            </SkillsCard>
         </div>
     </div>
-    <div class="flex gap-4 lg:ms-1 flex-col items-start justify-between">
+    <div class="flex gap-2 lg:ms-1 flex-col items-start justify-between">
         <h4 class="text-orange-200">Herramientas:</h4>
         <div class="flex gap-x-4 lg:ms-1 flex-wrap items-center">
-            <SkillsLogo classes="bg-red-200" logoName="Git">
+            <SkillsCard classes={iconStyles.GitIcon} logoName="Git">
                 <GitIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="Github">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.GithubIcon} logoName="Github">
                 <GithubIcon size="40"/>
-            </SkillsLogo>
-            <SkillsLogo logoName="VS Code">
+            </SkillsCard>
+            <SkillsCard classes={iconStyles.VisualStudioIcon} logoName="VS Code">
                 <VisualStudioIcon size="40"/>
-            </SkillsLogo>
+            </SkillsCard>
         </div>
     </div>
 </section>

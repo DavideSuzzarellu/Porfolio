@@ -1,0 +1,19 @@
+---
+
+type Props = {
+    logoName?: string,
+    classes?: string
+}
+
+const { logoName, classes } = Astro.props
+---
+
+<article class="perspective-800 h-12 w-20 group relative" >
+    <div class={`${classes} border backface-hidden flex items-center justify-center absolute text-center h-full w-full transform transition duration-[1.5s] -rotate-y-180 group-hover:rotate-y-0 rounded-lg shadow-lg`}>        
+        <span>{logoName}</span>
+    </div>
+    <div class={`backface-hidden ${classes} flex items-center justify-center h-full w-full border text-center absolute transform transition duration-[1.5s] group-hover:rotate-y-180 rounded-lg shadow-lg`}>
+        <slot/>
+    </div>    
+</article>
+
