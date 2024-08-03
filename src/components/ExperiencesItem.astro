@@ -1,0 +1,18 @@
+---
+
+const { experience } = Astro.props
+---
+
+<article class="relative mx-9  md:mx-16 flex flex-col before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-slate-300 dark:before:border-white/15  ">
+  <div class="relative">
+    <div class="sticky top-0">
+      <span class="-left-[45px] text-white -top-2 absolute rounded-full text-5xl" >&bull;</span>
+      <time class="p-0 m-0 text-sm text-slate-300 dark:text-white/80">{experience.year}</time>
+      <h3 class="text-xl font-bold text-orange-400">{experience.role}</h3>
+      <h4 class="font-semibold text-xl text-orange-200 dark:text-white">{experience.company}</h4>
+    </div>
+  </div>
+  <div class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3">
+    {experience.description}
+  </div>
+</article>

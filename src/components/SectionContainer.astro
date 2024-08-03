@@ -1,9 +1,13 @@
 ---
 interface Props {
     id: string;
+    title?: string,
+    icon?: string
 }
-const { id } = Astro.props
+const { id, title, icon } = Astro.props
 ---
+
 <section id={id} class="mx-6 py-10 sm:mx-20 md:mx-32 text-start my-32">
+    <h2 class="mx-auto mb-3 relative items-center lg:ms-7 text-3xl font-bold text-orange-500 flex gap-2"><i class={`${icon} lg:absolute lg:top-4 lg:-left-12 fa-xs text-orange-500`}></i>{title}</h2>
     <slot/>
 </section>

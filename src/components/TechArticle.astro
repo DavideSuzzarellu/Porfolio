@@ -21,6 +21,7 @@ import JWTIcon from './icons/JWTIcon.astro';
 import StripeIcon from './icons/StripeIcon.astro';
 import PostgresSQLIcon from './icons/PostgresSQLIcon.astro';
 import { iconStyles } from '../styles/styles';
+import GithubIcon from './icons/GithubIcon.astro';
 
 type Props = {
     name?: string,
@@ -116,6 +117,10 @@ switch (icon) {
     case 'PostgresSQLIcon':
         TechIconComponent = PostgresSQLIcon;
         classes = iconStyles.PostgresSQLIcon
+        break;
+    case 'GithubIcon':
+        TechIconComponent = GithubIcon;
+        classes = iconStyles.GithubIcon
         break;
     default:
         TechIconComponent = null;

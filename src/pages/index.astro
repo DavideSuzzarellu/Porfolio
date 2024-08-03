@@ -5,19 +5,23 @@ import Proyectos from '../components/Projects.astro';
 import Certifications from '../components/Certifications.astro';
 import Skills from '../components/Skills.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import Experiences from '../components/Experiences.astro';
 ---
 
 <Layout title="DS Developer">
     <SectionContainer id='sobremi'>
         <SobreMi/>
     </SectionContainer>
-    <SectionContainer id='skills'>
+    <SectionContainer title='Skills' icon='fa-solid fa-gears'  id='skills'>
         <Skills/>
     </SectionContainer>
-    <SectionContainer id='certificaciones'>
+    <SectionContainer title='Experiencia laboral' icon='fa-solid fa-briefcase' id='experiencias'>
+        <Experiences/>
+    </SectionContainer>
+    <SectionContainer title='Certificaciones' icon='fa-solid fa-graduation-cap' id='certificaciones'>
         <Certifications/> 
     </SectionContainer> 
-    <SectionContainer id='proyectos'>
+    <SectionContainer title='Proyectos' icon='fa-solid fa-code'  id='proyectos'>
         <Proyectos/>
     </SectionContainer>
 </Layout>

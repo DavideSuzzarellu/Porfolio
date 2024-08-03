@@ -1,0 +1,17 @@
+---
+import { getEntry } from "astro:content"
+import ExperiencesItem from "./ExperiencesItem.astro"
+import type { Experience } from "../config/config";
+
+const { data: experiences } = await getEntry('experiences', 'experience-data');
+---
+
+<ol class="relative">
+    {
+      experiences.map((experience : Experience) => (
+        <li>
+          <ExperiencesItem experience={experience} />
+        </li>
+      ))
+    }
+  </ol>

@@ -5,7 +5,7 @@ import type { Project } from "../config/config";
 
 const { data: projects } = await getEntry('projects', 'project-data');
 ---
-<h2 class="mx-auto mb-3 relative items-center lg:ms-7 text-3xl font-bold text-orange-500 flex gap-2"><i class="fa-solid lg:absolute lg:top-4 lg:-left-12 fa-code fa-xs text-orange-500"></i>Proyectos</h2>
+
 <ul class="relative lg:ms-7 flex flex-col gap-10">                  
     <li>  
         {projects.map((project: Project) => <ProjectsItem project={project} />)}

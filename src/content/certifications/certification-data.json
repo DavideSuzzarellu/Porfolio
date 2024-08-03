@@ -12,7 +12,8 @@
             { "name": "Typescript", "icon" : "TypescriptIcon"},
             { "name": "Javascript", "icon" : "JavascriptIcon"},
             { "name": "React", "icon" : "ReactIcon"}
-        ]
+        ],
+        "pdf": "./pdfs/FundacionEsplaiCertificate.pdf"
     },
     {
         "courseName":"Desarrolador de software Full Stack", 
@@ -27,7 +28,8 @@
             { "name": "Python", "icon" : "PythonIcon"},
             { "name": "Bootstrap", "icon" : "BoostrapIcon"},
             { "name": "Postgres SQL", "icon" : "PostgresSQLIcon"}
-        ]
+        ],
+        "pdf": "./pdfs/4GeeksCertificate.pdf"
     },
     
     {
@@ -45,6 +47,7 @@
             { "name": "Django", "icon" : ""},
             { "name": "FastAPI", "icon" : ""},
             { "name": "Bs4(Beautiful Soup)"}
-        ]
+        ],
+        "pdf": "./pdfs/PythonCertificate.pdf"
     }
 ]

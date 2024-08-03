@@ -9,7 +9,8 @@
             { "name": "Node.js", "icon": "NodeJSIcon"},
             { "name": "Express", "icon": "ExpressIcon" },
             { "name": "Firestore (Firebase)", "icon": "FirebaseIcon" }        
-        ]	
+        ],
+        "url": "https://github.com/DavideSuzzarellu/React_Native_Books_App"	
     },
 
     {
@@ -23,7 +24,8 @@
             { "name": "React Router", "icon": "ReactRouterIcon" },
             { "name": "Javascript", "icon": "JavascriptIcon" },
             { "name": "React", "icon": "ReactIcon" }
-        ]	
+        ],
+        "url": "https://github.com/DavideSuzzarellu/Housy_Space_Web_Page"	
     },
     
     {
@@ -46,6 +48,7 @@
             { "name": "Cloudinary", "icon": "CloudinaryIcon" },
             { "name": "JSON Web Token (JWT)", "icon": "JWTIcon" },
             { "name": "Stripe", "icon": "StripeIcon" }
-          ]	
+          ],
+        "url": "https://github.com/DavideSuzzarellu/Training_Date"		
     }
 ]
